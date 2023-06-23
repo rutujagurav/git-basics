@@ -29,8 +29,6 @@ Following are some basic operations you will tend to do with git.
 
     If your starting point was a new codebase (not an exisiting one), then you'd want to link a remote repository with your local one so that you can backup your code, share it with others, etc. 
 
-6. *Remove* a remote link from local repository: `git remote rm origin`
-
 6. *Push* changes to the remote repo: `git push origin <branch name>`
 
     This pushes the codebase from the specified branch of the local repository to the remote repository. 
@@ -66,5 +64,9 @@ Fetch latest remote commits: `git pull`
 
 ## Forking
 
-A fork creates a new copy of the remote repository that's essentially disconnected from the original remote repository. Thus a fork is associated with two remote repositories - 1. the original remote repo (which you cloned or linked with using `git remote add origin <url of the original repo>`) and 2. a new remote repo (which you'll create on github.com and link with using `git remote add upstream <url of the fork>`).
+A fork creates a new copy of the remote repository that's essentially disconnected from the original remote repository. Thus a fork is associated with two remote repositories - 1. the original remote repo (which you cloned or linked with using `git remote add origin <url of the original repo>`) and 2. a new remote repo (which you'll create and link with using `git remote add upstream <url of the fork>`).
 
+Now you can push to whichever remote repo you want from the local using `git push origin <branch name>` (to push to original repo) or `git push upstream <branch name>`.
+
+If you have to sync changes from your original remote repo to your fork, a quick way to do that is by clicking "Sync fork" on Github.com page of your fork to update the remote fork.
+If you have local clone of the fork, update it with `git pull`.
