@@ -65,4 +65,3 @@ Fetch latest remote commits: `git pull`
 ## Forking
 
 A fork creates a new copy of the remote repository that's essentially disconnected from the original remote repository. Thus a fork is associated with two remote repositories - 1. the original remote repo (which you cloned or linked with using `git remote add origin <url of the original repo>`) and 2. a new remote repo (which you'll create and link with using `git remote add upstream <url of the fork>`).
-
